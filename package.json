@@ -1,0 +1,26 @@
+{
+  "name": "Shreveport_Handy_Man",
+  "version": "1.0.0",
+  "description": "Making a update version of a web site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cerealkiller1918/ShreveportHandyMan"
+  },
+  "author": "Justin Frasier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cerealkiller1918/github.io/issues"
+  },
+  "homepage": "https://github.com/cerealkiller1918/github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.17.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "0.3.2",
+    "gulp-pug": "3.3.0",
+    "gulp-sass": "^2.3.2"
+  }
+}
