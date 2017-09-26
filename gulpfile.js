@@ -61,7 +61,7 @@ gulp.task('copy', function () {
 
 gulp.task('watch', function(){
     gulp.watch(['sass/*.sass', 'sass/*/*.sass'],['sass']);
-    gulp.watch('./pug/*/*.pug',['pug']);
+    gulp.watch('./pug/*/*/*.pug',['pug']);
 });
 
 gulp.task('default',['copy','pug', 'sass', 'brower-sync', 'watch']);

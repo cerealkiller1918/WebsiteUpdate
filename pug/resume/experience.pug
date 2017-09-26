@@ -1,12 +1,12 @@
-.panel.panel-default
-    .panel-heading(role='tab', id='heading1')
-        .h3.panel-title(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapse1" aria-expanded="true", aria-controls="collapse1") 
-                .head.blue-text.text-lighten-2.bold
+#accordion(role='tablist')
+    .card
+        .card-header#headingExperience(role='tab')
+            h5.mb-0
+                a(data-toggle="collapse", href="#collapseExperience", aria-expanded="true", aria-controls="collapseExperience")
                     img.logo-panel(src="svg/business-person-silhouette-wearing-tie.svg")
                     |Experience
-    .panel-collapse.collapse(id='collapse1', role='tablist', aria-labelledby='heading1')
-        .panel-body.grey.lighten-4
-            .panel-group(id='accordionMall', role='tablist', aria-multiselectable='false')
+        #collapseExperience.collapse(role="tabpanel", aria-labelledby="headingExperience", data-parent="#accordion")
+            .card-body
                 include experience/xententLabs
                 include experience/pierreBossierMall
                 include experience/shreveportHandyman
