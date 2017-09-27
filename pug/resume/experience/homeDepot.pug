@@ -1,26 +1,26 @@
-block homeDepot
-    #accordion(role='tablist')
-        .card
-            .card-header#headingHomeDeport(role='tab')
-                h5.mb-0
-                    a(data-toggle="collapse", href="#collapseHomeDeport", aria-expanded="true", aria-controls="collapseHomeDeport")
-                        .row
-                            .col-xs-5.col-md-3
-                                .bold 
-                                    |The Home Depot
-                            .col-xs-6.col-xs-offset-1.col-md-2.col-md-offset-7.text-right
-                                |Bossier City, LA
-                        .row
-                            .col-xs-6.col-md-3 
-                                |Flooring Sales Specialist
-                            .col-xs-6.col-md-3.col-md-offset-6.text-right 
-                                |May 2013 – September 2013
 
-                        
-            #collapseHomeDeport.collapse(role="tabpanel", aria-labelledby="headingHomeDeport", data-parent="#accordion")
-                .card-body
-                     ul
-                        li Manage quotes
-                        li Selling floors
-                        li Cutting carpet
-                        li Cutting blinds
+#accordion1(role='tablist')
+    .card
+        .card-header#headingHomeDeport(role='tab')
+            h5.mb-0
+                a(data-toggle="collapse", href="#collapseHomeDeport", aria-expanded="true", aria-controls="collapseHomeDeport")
+                    .row
+                        .col
+                            .bold 
+                                |The Home Depot
+                        .col.text-right
+                            |Bossier City, LA
+                    .row
+                        .col
+                            |Flooring Sales Specialist
+                        .col.text-right 
+                            |May 2013 – September 2013
+
+                    
+        #collapseHomeDeport.collapse(role="tabpanel", aria-labelledby="headingHomeDeport", data-parent="#accordion1")
+            .card-body
+                 ul
+                    li Manage quotes
+                    li Selling floors
+                    li Cutting carpet
+                    li Cutting blinds

@@ -1,14 +1,15 @@
-block contactInfo
-    .panel.panel-default
-        .panel-heading(role='tab', id='heading5')
-            .h3.panel-title(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapse5" aria-expanded="true", aria-controls="collapse4" )
-                .topic
-                    .bold.head.blue-text.text-lighten-2
-                        img.logo-panel(src="svg/phone-call.svg")
-                        |Contact Info
-        .panel-collapse.collapse(id='collapse5', role='tablist', aria-labelledby='heading5')
-            .panel-body.grey.lighten-4
-
+#accordion(role='tablist')
+    .card
+        .card-header#headingInfo(role='tab')
+            h5.mb-0
+                a(data-toggle="collapse", href="#collapseInfo", aria-expanded="true", aria-controls="collapseInfo")
+                    .row
+                        .col
+                            img.logo-panel(src="svg/phone-call.svg")
+                            |Contact Info
+                    
+        #collapseInfo.collapse(role="tabpanel", aria-labelledby="headingInfo", data-parent="#accordion")
+            .card-body
                 address
                     .bold Justin Frasier
                     | 3243 Cottonwood St.

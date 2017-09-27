@@ -1,18 +1,18 @@
-#accordion(role='tablist')
+#accordion5(role='tablist')
     .card
         .card-header#headingSH(role='tab')
             h5.mb-0
                 a(data-toggle="collapse", href="#collapseSH", aria-expanded="true", aria-controls="collapseSH")
                     .row
-                        .col-xs-4.col-md-3
+                        .col
                             .bold Shreveport Handyman
-                        .col-xs-6.col-xs-offset-2.col-md-2.col-md-offset-7.text-right Bossier City, LA
+                        .col.text-right Bossier City, LA
                     .row
-                        .col-xs-4.col-md-3 General Maintenance & Labor
-                        .col-xs-8.col-md-3.col-md-offset-6.text-right September 2013 – January 2014
+                        .col General Maintenance & Labor
+                        .col.text-right September 2013 – January 2014
                     
                     
-        #collapseSH.collapse(role="tabpanel", aria-labelledby="headingSH", data-parent="#accordion")
+        #collapseSH.collapse(role="tabpanel", aria-labelledby="headingSH", data-parent="#accordion5")
             .card-body
                  ul
                      li Installation and Maintenance of electrical wiring, receptacles, and junction box

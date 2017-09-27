@@ -1,26 +1,24 @@
-block bpcc
-    .panel.panel-default
-        .panel-heading(role='tab', id='headingSchoolOne')
-            .h4.panel-title(role="button", data-toggle="collapse", data-parent="#accordionSchool", href="#collapseSchoolOne" aria-expanded="false", aria-controls="collapseSchoolOne") 
-                .topic
+
+
+#accordion(role='tablist')
+    .card
+        .card-header#headingBPCC(role='tab')
+            h5.mb-0
+                a(data-toggle="collapse", href="#collapseBPCC", aria-expanded="true", aria-controls="collapseBPCC")
                     .row
-                        .col-xs-6.col-md-7.bold
-                            |Bossier Parish Community College
-                        .col-xs-4.col-xs-offset-2.col-md-3.col-md-offset-2.text-right
+                        .col.bold
+                             |Bossier Parish Community College
+                        .col.text-right
                             |2013 - 2016
-        .panel-collapse.collapse(id='collapseSchoolOne', role='tablist', aria-labelledby='headingSchoolOne')
-            .panel-body.grey.lighten-4.p
-                 
-                .bold Associate of Cyber Technology, Programmer-Analyst
-                .tab Made Dean's List and Chancellor's List.
-                
-    
-                .bold Classes:
-                ul.list
+                    
+                    
+        #collapseBPCC.collapse(role="tabpanel", aria-labelledby="headingBPCC", data-parent="#accordion")
+            .card-body
+                ul
                     li Prob Solving & Prog Techniques
                     li Support of Emerging Technology
                     li Intro to C++Programming
-                    li Advanced C++ Programming	
+                    li Advanced C++ Programming 
                     li Composition & Rhetoric I
                     li College Algebra
                     li Web Design I

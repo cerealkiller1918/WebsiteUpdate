@@ -1,11 +1,14 @@
-block northwood
-    .panel.panel-default
-        .panel-heading(role='tab', id='headingSchool2')
-            h4.panel-title(role="button", data-toggle="collapse", data-parent="#accordionSchool", href="#collapseSchool2" aria-expanded="true", aria-controls="collapseSchool2") 
-                .topic
+#accordion(role='tablist')
+    .card
+        .card-header#headingNWHS(role='tab')
+            h5.mb-0
+                a(data-toggle="collapse", href="#collapseNWHS", aria-expanded="true", aria-controls="collapseNWHS")
                     .row
-                        .col-xs-5.bold 
+                        .col.bold 
                             |Northwood High School 
-                        .col-xs-3.col-xs-offset-4.text-right 
+                        .col.text-right 
                             |1999 - 2003
-        .panel-collapse.collapse(id='collapseSchool2', role='tablist', aria-labelledby='headingSchool2')
+                    
+                    
+        #collapseNWHS.collapse(role="tabpanel", aria-labelledby="headingNWHS", data-parent="#accordion")
+           

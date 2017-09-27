@@ -1,13 +1,16 @@
-block certification
-    .panel.panel-default
-        .panel-heading(role='tab', id='heading4')
-            .h3.panel-title(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapse4" aria-expanded="true", aria-controls="collapse4" )
-                .topic
-                    .bold.head.blue-text.text-lighten-2
-                        img.logo-panel(src="svg/certification.svg")
-                        |Certification
-        .panel-collapse.collapse(id='collapse4', role='tablist', aria-labelledby='heading4')
-            .panel-body.grey.lighten-4
+#accordion(role='tablist')
+    .card
+        .card-header#headingCerts(role='tab')
+            h5.mb-0
+                a(data-toggle="collapse", href="#collapseCerts", aria-expanded="true", aria-controls="collapseCerts")
+                    .row
+                        .col
+                            img.logo-panel(src="svg/certification.svg")
+                            |Certification
+
+                    
+        #collapseCerts.collapse(role="tabpanel", aria-labelledby="headingCerts", data-parent="#accordion")
+            .card-body
                 .bold Computer Certification:
                 ul.list
                     li CompTIA A+

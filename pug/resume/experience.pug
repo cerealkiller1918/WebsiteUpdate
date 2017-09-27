@@ -2,9 +2,11 @@
     .card
         .card-header#headingExperience(role='tab')
             h5.mb-0
-                a(data-toggle="collapse", href="#collapseExperience", aria-expanded="true", aria-controls="collapseExperience")
-                    img.logo-panel(src="svg/business-person-silhouette-wearing-tie.svg")
-                    |Experience
+                a(data-toggle="collapse", href="#collapseExperience", aria-expanded="fasle", aria-controls="collapseExperience")
+                    .row
+                        .col
+                            img.logo-panel(src="svg/business-person-silhouette-wearing-tie.svg")
+                            |Experience
         #collapseExperience.collapse(role="tabpanel", aria-labelledby="headingExperience", data-parent="#accordion")
             .card-body
                 include experience/xententLabs

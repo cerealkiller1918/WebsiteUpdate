@@ -1,18 +1,18 @@
-#accordion(role='tablist')
+#accordion6(role='tablist')
     .card
         .card-header#headingLabs(role='tab')
             h5.mb-0
                 a(data-toggle="collapse", href="#collapseLabs", aria-expanded="true", aria-controls="collapseLabs")
                     .row
-                        .col-xs-4.col-md-3
+                        .col
                             .bold xententLABS
-                        .col-xs-6.col-xs-offset-2.col-md-2.col-md-offset-7.text-right Bossier City, LA
+                        .col.text-right Bossier City, LA
                     .row
-                        .col-xs-3.col-md-3 Intern
-                        .col-xs-9.col-md-3.col-md-offset-6.text-right  January 2016 – May 2014
+                        .col Intern
+                        .col.text-right  January 2016 – May 2014
                     
                     
-        #collapseLabs.collapse(role="tabpanel", aria-labelledby="headingLabs", data-parent="#accordion")
+        #collapseLabs.collapse(role="tabpanel", aria-labelledby="headingLabs", data-parent="#accordion6")
             .card-body
                  ul
                     li Agile Development

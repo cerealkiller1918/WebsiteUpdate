@@ -1,13 +1,17 @@
-block skills
-    .panel.panel-default
-        .panel-heading(role='tab', id='heading3')
-            .h4.panel-title(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapse3" aria-expanded="true", aria-controls="collapse3" )
-                .topic.bold.head.blue-text.text-lighten-2
-                    img.logo-panel(src="svg/screwdriver-and-wrench-crossed.svg")
-                    |Skills
-        .panel-collapse.collapse(id='collapse3', role='tablist', aria-labelledby='heading3')
-            .panel-body.grey.lighten-4
 
+#accordion(role='tablist')
+    .card
+        .card-header#headingSkills(role='tab')
+            h5.mb-0
+                a(data-toggle="collapse", href="#collapseSkills", aria-expanded="true", aria-controls="collapseSkills")
+                    .row
+                        .col
+                            img.logo-panel(src="svg/screwdriver-and-wrench-crossed.svg")
+                            |Skills
+
+                    
+        #collapseSkills.collapse(role="tabpanel", aria-labelledby="headingSkills", data-parent="#accordion")
+            .card-body
                 .bold Computer Skills:
                 ul.list
                     li Java
