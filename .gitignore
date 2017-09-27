@@ -44,12 +44,10 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-.gitignore
+
 .idea/New JustinFrasier.com.iml
 .idea/modules.xml
 .idea/preferred-vcs.xml
 .idea/workspace.xml
-css/
-photo/
-www/photo/
+
 
