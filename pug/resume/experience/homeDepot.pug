@@ -1,22 +1,22 @@
 
-#accordion1(role='tablist')
+#accordion1.accordion(role='tablist')
     .card
         .card-header#headingHomeDeport(role='tab')
             h5.mb-0
                 a(data-toggle="collapse", href="#collapseHomeDeport", aria-expanded="true", aria-controls="collapseHomeDeport")
                     .row
                         .col
-                            .bold 
+                            .bold
                                 |The Home Depot
                         .col.text-right
                             |Bossier City, LA
                     .row
                         .col
                             |Flooring Sales Specialist
-                        .col.text-right 
+                        .col.text-right
                             |May 2013 – September 2013
 
-                    
+
         #collapseHomeDeport.collapse(role="tabpanel", aria-labelledby="headingHomeDeport", data-parent="#accordion1")
             .card-body
                  ul
