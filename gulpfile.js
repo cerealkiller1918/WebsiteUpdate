@@ -15,7 +15,7 @@ gulp.task('pug' , function(){
     // Index
     gulp.src('./pug/index/index.pug')
         .pipe(pug({
-            pretty: true
+            pretty: false
         }))
         .pipe(gulp.dest('./www/'));
     // Resume
@@ -65,6 +65,9 @@ gulp.task('watch', function(){
     gulp.watch('./pug/*/*.pug',['pug']);
 });
 
-gulp.task('default',['copy','pug', 'sass', 'brower-sync', 'watch']);
+
+
+gulp.task('default',['make', 'brower-sync', 'watch']);
 
 gulp.task('make', ['pug', 'sass', 'copy']);
+
