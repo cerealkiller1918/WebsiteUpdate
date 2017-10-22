@@ -24,6 +24,18 @@ gulp.task('pug' , function(){
             pretty: true
         }))
         .pipe(gulp.dest('./www/'));
+    //Blog
+    gulp.src('./pug/blog/blog.pug ')
+        .pipe(pug({
+            pretty:true
+        }))
+        .pipe(gulp.dest('./www/'));
+    //Github
+    gulp.src('./pug/github/github.pug ')
+        .pipe(pug({
+            pretty:true
+        }))
+        .pipe(gulp.dest('./www/'));
 });
 
 
