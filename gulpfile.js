@@ -15,31 +15,37 @@ gulp.task('pug' , function(){
     // Index
     gulp.src('./pug/index/index.pug')
         .pipe(pug({
-            pretty: false
+            pretty: true
         }))
         .pipe(gulp.dest('./www/'));
     // Resume
     gulp.src('./pug/resume/resume.pug')
         .pipe(pug({
-            pretty: false
+            pretty: true
         }))
         .pipe(gulp.dest('./www/'));
     //Blog
     gulp.src('./pug/blog/blog.pug ')
         .pipe(pug({
-            pretty:false
+            pretty: true
         }))
         .pipe(gulp.dest('./www/'));
     //Github
     gulp.src('./pug/github/github.pug ')
         .pipe(pug({
-            pretty:false
+            pretty: true
         }))
         .pipe(gulp.dest('./www/'));
     //Facebook
     gulp.src('./pug/facebook/facebook.pug ')
         .pipe(pug({
-            pretty:false
+            pretty: true
+        }))
+        .pipe(gulp.dest('./www/'));
+    //Linkedin
+    gulp.src('./pug/linkedin/linkedin.pug ')
+        .pipe(pug({
+            pretty: true
         }))
         .pipe(gulp.dest('./www/'));
 });
@@ -86,6 +92,8 @@ gulp.task('watch', function(){
 
 
 gulp.task('default',['make', 'browser-sync', 'watch']);
+
+gulp.task('dev-only',['make', 'browser-sync', 'watch']);
 
 gulp.task('make', ['pug', 'sass', 'copy']);
 

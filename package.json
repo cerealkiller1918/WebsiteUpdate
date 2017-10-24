@@ -1,14 +1,16 @@
 {
-  "name": "Shreveport_Handy_Man",
+  "name": "JustinFrasier.com",
   "version": "1.0.0",
   "description": "Making a update version of a web site",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "make": "gulp make",
+    "dev": "gulp dev-only"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cerealkiller1918/ShreveportHandyMan"
+    "url": "git+https://github.com/cerealkiller1918/websiteupdate.git"
   },
   "author": "Justin Frasier",
   "license": "ISC",
