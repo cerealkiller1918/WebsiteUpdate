@@ -30,20 +30,8 @@ gulp.task('pug' , function(){
             pretty: true
         }))
         .pipe(gulp.dest('./www/'));
-    //Github
-    gulp.src('./pug/github/github.pug ')
-        .pipe(pug({
-            pretty: true
-        }))
-        .pipe(gulp.dest('./www/'));
-    //Facebook
-    gulp.src('./pug/facebook/facebook.pug ')
-        .pipe(pug({
-            pretty: true
-        }))
-        .pipe(gulp.dest('./www/'));
-    //Linkedin
-    gulp.src('./pug/linkedin/linkedin.pug ')
+    //Social media
+    gulp.src('./pug/socialmedia/socialmedia.pug ')
         .pipe(pug({
             pretty: true
         }))
