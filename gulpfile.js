@@ -24,6 +24,12 @@ gulp.task('pug' , function(){
             pretty: true
         }))
         .pipe(gulp.dest('./www/'));
+    // GitHub
+    gulp.src('./pug/github/github.pug')
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(gulp.dest('./www/'));
 });
 
 
